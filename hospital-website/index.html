@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="MediCare Hospital - Leading healthcare provider with 24/7 emergency services, specialized departments, and experienced medical professionals">
+    <meta name="keywords" content="hospital, healthcare, emergency, doctors, medical services, surgery, cardiology, pediatrics">
+    <title>MediCare Hospital - Your Health, Our Priority</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📞 +254 123-4567</span>
+                    <span>📧info@medicarehospital.com</span>
+                    <span>23 Medical Center Dr, Health City</span>
+                </div>
+                <div class="emergency-banner">
+                    🚨 24/7 Emergency Services
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav>
+            <div class="container nav-container">
+                <a href="#home" class="logo" data-page="home">
+                    <span class="logo-icon">🏥</span>
+                    <span>MediCare Hospital</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-page="services">Services</a></li>
+                    <li><a href="#doctors" class="nav-link" data-page="doctors">Doctors</a></li>
+                    <li><a href="#appointment" class="nav-link" data-page="appointment">Appointment</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                    <li><a href="tel:+15551234567" class="btn btn-emergency">Emergency</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page / Hero -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Health, <span class="hero-highlight">Our Priority</span></h1>
+                    <p>Experience world-class healthcare with compassionate care, advanced technology, and expert medical professionals dedicated to your well-being.</p>
+                    <div class="hero-buttons">
+                        <a href="#appointment" class="btn btn-primary" data-page="appointment">
+                            📅 Book Appointment
+                        </a>
+                        <a href="#services" class="btn btn-outline" data-page="services">
+                            🏥 Our Services
+                        </a>
+                        <a href="tel:+15551234567" class="btn btn-emergency">
+                            🚨 Emergency: +254 123-4567
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50000">0</span>
+                        <span class="stat-label">Patients Treated</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="200">0</span>
+                        <span class="stat-label">Expert Doctors</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">% Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Core Services</h2>
+                <p class="section-subtitle">Comprehensive healthcare services delivered with excellence and compassion</p>
+
+                <div class="grid grid-4">
+                    <div class="card service-card fade-in">
+                        <span class="card-icon">❤️</span>
+                        <h3>Cardiology</h3>
+                        <p>Advanced heart care with state-of-the-art cardiac facilities and experienced cardiologists.</p>
+                        <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
+                    </div>
+
+                    <div class="card service-card fade-in">
+                        <span class="card-icon">👶</span>
+                        <h3>Pediatrics</h3>
+                        <p>Specialized care for children with child-friendly environment and pediatric experts.</p>
+                        <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
+                    </div>
+
+                    <div class="card service-card fade-in">
+                        <span class="card-icon">🧠</span>
+                        <h3>Neurology</h3>
+                        <p>Expert neurological care for brain and nervous system disorders with latest technology.</p>
+                        <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
+                    </div>
+
+                    <div class="card service-card fade-in">
+                        <span class="card-icon">🦴</span>
+                        <h3>Orthopedics</h3>
+                        <p>Comprehensive bone and joint care with minimally invasive surgical techniques.</p>
+                        <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section section-alt" id="about">
+            <div class="container">
+                <h2 class="section-title">About MediCare</h2>
+                <p class="section-subtitle">MediCare Hospital has been providing compassionate medical care for over two decades. We combine modern medicine with patient-centered care.</p>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <span class="card-icon">🏥</span>
+                        <h3>Mission</h3>
+                        <p>Deliver high-quality healthcare accessible to everyone while treating each patient with dignity and respect.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">👨‍⚕️</span>
+                        <h3>Vision</h3>
+                        <p>Be the leading healthcare provider recognized for excellence, innovation, and compassionate care.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">🧪</span>
+                        <h3>Values</h3>
+                        <p>Integrity, Excellence, Teamwork, Compassion and Continuous Improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors -->
+        <section class="section" id="doctors">
+            <div class="container">
+                <h2 class="section-title">Meet Our Doctors</h2>
+                <p class="section-subtitle">Highly experienced specialists across multiple disciplines</p>
+
+                <div style="text-align:center; margin-bottom:1rem;">
+                    <input id="doctorSearch" type="text" placeholder="Search by department or name..." style="max-width:480px; padding:0.6rem; border-radius:6px; border:1px solid var(--border-color);">
+                </div>
+
+                <div class="grid grid-3" id="doctorList">
+                    <div class="card doctor-card" data-dept="Cardiology">
+                        <div class="doctor-avatar">👩‍⚕️</div>
+                        <div class="doctor-name">Dr. Jane Smith</div>
+                        <div class="doctor-specialty">Cardiology</div>
+                        <div class="doctor-contact">
+                            <a class="btn btn-outline" href="mailto:jane.smith@medicare.com">Email</a>
+                            <a class="btn btn-secondary" href="#appointment" data-page="appointment">Book</a>
+                        </div>
+                    </div>
+
+                    <div class="card doctor-card" data-dept="Neurology">
+                        <div class="doctor-avatar">👨‍⚕️</div>
+                        <div class="doctor-name">Dr. N. Lee</div>
+                        <div class="doctor-specialty">Neurology</div>
+                        <div class="doctor-contact">
+                            <a class="btn btn-outline" href="mailto:n.lee@medicare.com">Email</a>
+                            <a class="btn btn-secondary" href="#appointment" data-page="appointment">Book</a>
+                        </div>
+                    </div>
+
+                    <div class="card doctor-card" data-dept="Pediatrics">
+                        <div class="doctor-avatar">👩‍⚕️</div>
+                        <div class="doctor-name">Dr. P. Patel</div>
+                        <div class="doctor-specialty">Pediatrics</div>
+                        <div class="doctor-contact">
+                            <a class="btn btn-outline" href="mailto:p.patel@medicare.com">Email</a>
+                            <a class="btn btn-secondary" href="#appointment" data-page="appointment">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment -->
+        <section class="section section-alt" id="appointment">
+            <div class="container">
+                <h2 class="section-title">Book an Appointment</h2>
+                <p class="section-subtitle">Fill the form and our team will contact you to confirm the appointment.</p>
+
+                <div class="form-container">
+                    <div id="appointmentSuccess" class="form-success">Your appointment request has been received. We'll contact you shortly.</div>
+
+                    <form id="appointmentForm" class="appointment-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="patientName">Full Name</label>
+                                <input id="patientName" name="patientName" type="text" required>
+                                <div class="form-error" id="errName">Please enter your name</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="patientEmail">Email</label>
+                                <input id="patientEmail" name="patientEmail" type="email" required>
+                                <div class="form-error" id="errEmail">Please enter a valid email</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointmentDate">Date</label>
+                                <input id="appointmentDate" name="appointmentDate" type="date" required>
+                                <div class="form-error" id="errDate">Please select a date</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appointmentTime">Time</label>
+                                <input id="appointmentTime" name="appointmentTime" type="time" required>
+                                <div class="form-error" id="errTime">Please select a time</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="departmentSelect">Department</label>
+                            <select id="departmentSelect" name="departmentSelect" required>
+                                <option value="">-- Select Department --</option>
+                                <option>Cardiology</option>
+                                <option>Pediatrics</option>
+                                <option>Neurology</option>
+                                <option>Orthopedics</option>
+                            </select>
+                            <div class="form-error" id="errDept">Please select a department</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Notes (optional)</label>
+                            <textarea id="notes" name="notes" rows="4"></textarea>
+                        </div>
+
+                        <div style="display:flex; gap:1rem; align-items:center;">
+                            <button type="submit" class="btn btn-primary">Request Appointment</button>
+                            <div class="loading" id="appointmentLoading"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We are here to help. Get in touch with any questions or emergencies.</p>
+
+                <div class="grid grid-2">
+                    <div>
+                        <div class="card">
+                            <h3>Get in touch</h3>
+                            <p><strong>Phone:</strong> +254 123-4567</p>
+                            <p><strong>Email:</strong> info@medicarehospital.com</p>
+                            <p><strong>Address:</strong> 123 Medical Center Dr, Health City</p>
+                            <div class="social-links" style="margin-top:1rem;">
+                                <a href="#" title="Facebook">f</a>
+                                <a href="#" title="Twitter">t</a>
+                                <a href="#" title="LinkedIn">in</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <h3>Send us a message</h3>
+                            <div id="contactSuccess" class="form-success">Thanks! Your message was sent.</div>
+                            <form id="contactForm" novalidate>
+                                <div class="form-group">
+                                    <label for="contactName">Name</label>
+                                    <input id="contactName" type="text" required>
+                                    <div class="form-error" id="errContactName">Please enter your name</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email</label>
+                                    <input id="contactEmail" type="email" required>
+                                    <div class="form-error" id="errContactEmail">Please enter a valid email</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactMessage">Message</label>
+                                    <textarea id="contactMessage" rows="4" required></textarea>
+                                    <div class="form-error" id="errContactMessage">Please enter a message</div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:1.5rem;">
+                    <iframe title="clinic-map" src="https://maps.google.com/maps?q=nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed" style="width:100%; height:300px; border:0; border-radius:8px;"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency / CTA -->
+        <section class="section emergency-section">
+            <div class="container emergency-content">
+                <h2>Emergency Care — 24/7</h2>
+                <div class="emergency-number">+254 123-4567</div>
+                <p>Call us immediately for life-threatening conditions — we are available around the clock.</p>
+                <a href="tel:+25551234567" class="btn btn-emergency">Call Emergency</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>MediCare Hospital - Quality healthcare with compassion and expertise.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services" data-page="services">Cardiology</a></li>
+                    <li><a href="#services" data-page="services">Pediatrics</a></li>
+                    <li><a href="#services" data-page="services">Neurology</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about" data-page="about">About Us</a></li>
+                    <li><a href="#doctors" data-page="doctors">Doctors</a></li>
+                    <li><a href="#contact" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📞 +254 123-4567</p>
+                <p>📧 info@medicarehospital.com</p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2025 MediCare Hospital. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">t</a>
+                <a href="#" title="LinkedIn">in</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- External JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
